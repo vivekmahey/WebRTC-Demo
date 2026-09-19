@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WebRTC Camera Demo</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+     <div class="ambient ambient-1"></div>
+   <div class="ambient ambient-2"></div>
+   <div class="ambient ambient-3"></div>
+
+   <div class="background-grid"></div>
+    <main class="container">
+
+        <div class="header">
+            <span class="status-dot"></span>
+            <p>WebRTC Camera Demo</p>
+        </div>
+
+        <div class="video-card">
+
+            <div class="video-wrapper">
+
+                <video autoplay playsinline></video>
+
+                <div class="video-overlay">
+                    <span class="live-dot"></span>
+                    <span>LIVE</span>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <h1>Camera Stream</h1>
+                <p>
+                    Your camera and microphone stream is being displayed
+                    directly in the browser.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
